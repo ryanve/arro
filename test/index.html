@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<title>Tests</title>
+<style>
+  html { font-family:sans-serif; background:azure; color:#111 }
+  body {
+    width:100%; margin:auto;
+    font-size:1em; line-height:1.6;
+    padding:2%; box-sizing:border-box;
+    min-width: 480px; /* force overflow to ensure scroll works */
+  }
+  pre { padding:0 .5em; white-space:pre-line }
+  pre span { white-space:pre-wrap }
+  pre b { color:tomato }
+  a[href] { color:navy }
+  a[href]:hover { color:indigo }
+  kbd { display:inline-block; padding:.2em } 
+  pre kbd { padding:0 }
+  [hidden] { display:none }
+  :target { font-weight:bold; background:springgreen }
+  #jumps a { padding:2px 6px }
+</style>
+
+<!-- Test both tags -->
+<link hidden rel="prev" href="#">
+<a hidden rel="next" href="#"></a>
+
+<h4>For this page to work you must install dev dependencies via the command line</h4>
+<pre>
+<span><b>$</b> <kbd>cd <a href="../">arro</a></kbd></span>
+<span><b>$</b> <kbd>npm install</kbd></span>
+</pre>
+
+<h4>Using the left and right arrows keys should flip through the jumps without interfering with scrolling.
+<br><small>It should <em>not</em> work when horizontal scrollbar is present.</small></h4>
+<ul id="jumps"></ul>
+
+<script src="../src/index.js"></script>
+<script src="../node_modules/annex/annex.js"></script>
+<script src="../node_modules/cueing/cueing.js"></script>
+<script src="./index.js"></script>

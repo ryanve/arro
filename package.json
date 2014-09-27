@@ -1,0 +1,49 @@
+{
+  "name": "arro",
+  "description": "left/right arrow keyboard shortcuts",
+  "version": "0.1.0",
+  "homepage": "https://github.com/ryanve/arro",
+  "license": "MIT",
+  "author": "Ryan Van Etten",
+  "keywords": ["keyboard", "shortcuts", "browser", "interaction", "arrow"],
+  "main": "arro.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ryanve/arro.git"
+  },
+  "dependencies": {},
+  "optionalDependencies": {},
+  "devDependencies": {
+    "annex": "~0.1.0",
+    "cueing": "~0.1.0",
+    "universal": "~0.1.0",
+    "grunt-contrib-uglify": "~0.6.0",
+    "grunt-contrib-concat": "~0.4.0",
+    "grunt-contrib-jshint": "~0.10.0"
+  },
+  "jshintConfig": {
+    "asi": true,
+    "boss": true,
+    "browser": true,
+    "debug": true,
+    "devel": true,
+    "eqnull": true,
+    "evil": true,
+    "expr": true,
+    "globals": {},
+    "lastsemic": true,
+    "latedef": "nofunc",
+    "laxcomma": true,
+    "maxcomplexity": 20,
+    "maxerr": 10,
+    "maxlen": 115,
+    "maxparams": 4,
+    "node": true,
+    "sub": true,
+    "supernew": true,
+    "trailing": true,
+    "undef": true,
+    "unused": true,
+    "worker": true
+  }
+}
